@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mario Encanador</title>
+  </head>
+  <body>
+    <div class="header">
+            <img src="./img/logo-header.png" alt="logo do site">
+           <a><span>HOME</span></a>
+            <a href="./nossos-servicos.html">NOSSOS SERVIÇOS</a>
+            <a onclick="showForm()">FALE CONOSCO</a>
+    </div>
+    <div class="content">
+      <div class="main-box">
+        <img src="./img/logo.png" alt="logo do mario bros" class="bros" />
+        <p>
+          🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos
+          Com Estilo! 🔧
+        </p>
+        <p>
+          Você já se encontrou em uma situação de emergência com encanamento?
+          Vazamentos inesperados, canos entupidos ou torneiras que não param de
+          pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+          Apresentamos a vocês os encanadores mais famosos do Reino dos
+          Cogumelos - Mario e Luigi!
+        </p>
+       
+        <button onclick="showForm()">Entre em Contato</button>
+      </div>
+      <div class="img-box">
+        <img src="./img/mario.png" alt="mario e luigi" class="mario" />
+      </div>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=5521996904484&text=Fala,%20Jo%C3%A3o%20Vitor!%20Acabei%20de%20ver%20o%20seu%20site%20do%20Mario%20Bros,%20esse%20site%20est%C3%A1%20muito%20lindo." class="link-whatsapp">
+        <img src="./img/whatsapp.png" alt="link para o whatsapp">
+      </a>
+    <div class="video-box">
+      <video src="./mp4/video.mp4" autoplay muted loop></video>
+      <div class="mask">
+      </div>
+    </div>
+    <form class="formulario-fale-conosco" 
+     action="https://formcarry.com/s/7eusE6pqW3z"
+     method="POST"   
+     enctype="multipart/form-data">
+      <img src="./img/close.png" alt="fechar" onclick="hideForm()">
+        <input placeholder="Seu Nome" type="text" name="Nome">
+        <input placeholder="Seu Telefone" type="tel" name="Telefone">
+        <input placeholder="Seu Email" type="email" name="Email">
+        <textarea placeholder="Digite seu problema aqui..." name="Duvida"></textarea>
+        <button class="orcamento" type="submit">Pedir Orçamento</button>
+    </form>
+    <div class="form-mask" onclick="hideForm()"></div>
+  </body>
+  <script src="scripts.js"></script>
+</html>

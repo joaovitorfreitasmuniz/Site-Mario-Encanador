@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="./servstyle.css"
+    media="screen"
+  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nossos Serviços</title>
+  </head>
+  <body>
+    <div class="header">
+      <img src="./img/logo-header.png" alt="logo do site"/>
+      <a href="./index.html">HOME</a>
+     <a href="./nossos-servicos.html"><span>NOSSOS SERVIÇOS</span></a>
+      <a onclick="showForm()">FALE CONOSCO</a>
+    </div>
+    <div class="content">
+      <div class="main-box">
+        <div class="water">
+          <img src="./img/Icone_Vazamento.png" />
+          <h3>Vazamento de Água</h3>
+          <h4>A partir de 39,99</h4>
+          <p>
+            Para contratar o serviço de reparação de vazamentos de água, clique
+            no botão abaixo e preencha o formulário, ou nos envie uma mensagem
+            via whatsapp
+          </p>
+          <button onclick="showForm()">Entre em Contato</button>
+        </div>
+        <div class="gas">
+          <img src="./img/vazamentogas.jpg" />
+          <h3>Vazamento de Gás</h3>
+          <h4>A partir de 59,99</h4>
+          <p>
+            Para contratar o serviço de reparação de vazamentos de gás, clique
+            no botão abaixo e preencha o formulário, ou nos envie uma mensagem
+            via whatsapp
+          </p>
+          <button onclick="showForm()">Entre em Contato</button>
+        </div>
+        <div class="desentupimento">
+          <img src="./img/desentupimento.jpg" />
+          <h3>Desentupimento</h3>
+          <h4>A partir de 19,99</h4>
+          <p>
+            Para contratar o serviço de desentupimento, clique no botão abaixo e
+            preencha o formulário, ou nos envie uma mensagem via whatsapp
+          </p>
+          <button onclick="showForm()">Entre em Contato</button>
+        </div>
+      </div>
+      <div class="img-box"></div>
+    </div>
+    <a
+      href="https://api.whatsapp.com/send?phone=5521996904484&text=Fala,%20Jo%C3%A3o%20Vitor!%20Acabei%20de%20ver%20o%20seu%20site%20do%20Mario%20Bros,%20esse%20site%20est%C3%A1%20muito%20lindo."
+      class="link-whatsapp"
+    >
+      <img src="./img/whatsapp.png" alt="link para o whatsapp" />
+    </a>
+    <div class="back-box">
+      <img src="./img/backgroundfix.jpg" class="backgroundfix" />
+      <div class="mask"></div>
+    </div>
+    <form
+      class="formulario-fale-conosco"
+      action="https://formcarry.com/s/7eusE6pqW3z"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <img src="./img/close.png" alt="fechar" onclick="hideForm()" />
+      <input placeholder="Seu Nome" type="text" name="nome" />
+      <input placeholder="Seu Telefone" type="tel" name="telefone" />
+      <input placeholder="Seu Email" type="email" name="email" />
+      <textarea
+        placeholder="Digite seu problema aqui..."
+        name="duvida"
+      ></textarea>
+      <button class="orcamento" type="submit">Pedir Orçamento</button>
+    </form>
+    <div class="form-mask" onclick="hideForm()"></div>
+  </body>
+  <script src="scripts.js"></script>
+</html>

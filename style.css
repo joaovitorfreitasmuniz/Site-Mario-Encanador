@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px;
+  height: 100vh;
+}
+
+.main-box {
+  width: 40%;
+}
+
+.bros {
+  width: 450px;
+}
+
+p {
+  font-size: 20px;
+  color: ghostwhite;
+}
+
+button {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0;
+  padding: 10px 0;
+  border-radius: 3px;
+  background-color: #c51111;
+  width: 200px;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+button:hover {
+  border-radius: 10px;
+  background-color: #af0909;
+  width: 215px;
+  height: 55px;
+  transition: 0.7s ease-in-out;
+}
+
+.orcamento {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0;
+  padding: 10px 0;
+  border-radius: 3px;
+  background-color: #c51111;
+  width: 100%;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: 0.7s ease-in-out;
+}
+
+.orcamento:hover {
+  border-radius: 10px;
+  background-color: #af0909;
+  width: 100%;
+  height: 55px;
+  transition: 0.7s ease-in-out;
+}
+
+.mario {
+  height: 500px;
+}
+
+.video-box {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+video {
+  min-width: 100vw;
+  min-height: 107vh;
+}
+
+.mask {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    109deg,
+    rgba(10, 12, 16, 0.99) 15%,
+    rgba(10, 12, 16, 0.7) 50%,
+    rgba(10, 12, 16, 0.99) 85%
+  );
+}
+
+.link-whatsapp {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.link-whatsapp img {
+  height: 60px;
+}
+
+.header {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  gap: 30px;
+}
+
+.header img {
+  height: 60px;
+  margin-right: 25px;
+}
+
+.header a {
+  color: honeydew;
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #c51111;
+  font-size: 19px;
+  transition: 0.7s ease-in-out;
+}
+
+  .formulario-fale-conosco {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column; 
+    position: fixed;
+    top: 30%;
+    left: -300px;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 20px;
+    z-index: 5;
+    transition: 1s;
+  }
+
+  .formulario-fale-conosco img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-bottom: 4px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .formulario-fale-conosco img:hover {
+    width: 27px;
+    height: 27px;
+    margin-bottom: 2px;
+  }
+  input {
+    height: 40px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    padding-left: 20px;
+    outline-color: rgb(113, 206, 20);
+  }
+
+  textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    padding-left: 20px;
+    outline-color: rgb(113, 206, 20);
+    transform: translateX();
+    resize: none;
+  }
+
+  .form-mask {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    z-index: 4;
+  }
+
+  span {
+    color: #c51111;
+}
+
+  @media(max-width: 1000px){
+    p {
+      font-size: 12px;
+    }
+
+.content {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.main-box{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mario {
+  width: 80vw;
+  height: auto;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  margin: 15px;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.header img {
+display: none;
+}
+
+.header a {
+  color: honeydew;
+  cursor: pointer;
+  font-size: 15px;
+  
+}
+
+.header a:hover {
+  color: #c51111;
+  font-size: 16px;
+  transition: 0.7s ease-in-out;
+}
+
+  }
